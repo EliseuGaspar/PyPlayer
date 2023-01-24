@@ -3,7 +3,8 @@ import os
 
 class readjson():
 
-    def __init__(self): pass
+    def __init__(self): 
+        pass
 
     def GetStartTime(self):
         with open(f"{os.getcwd()}/PyConfigs/db.json") as db:

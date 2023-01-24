@@ -26,4 +26,4 @@ def duration(type_ : str = 'time'):
         current_file = MP3(file)
         return current_file.info.length
     else:
-        return 0
+        return False

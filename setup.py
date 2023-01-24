@@ -13,10 +13,10 @@ setup(
     long_description = 'PyPlayer é um modúlo para manipulação de áudios no formato MP3.\
     O mesmo foi criado com o objectivo de ser um modúlo fácil de usar e completo no \
     contexto de manipulação de MP3.',
-    url = 'https://github.com/EliseuGaspar/pyplayer',
+    url = 'https://github.com/EliseuGaspar/PyPlayer',
     project_urls = {
-        'Código fonte': 'https://github.com/EliseuGaspar/pyplayer',
-        'Download': 'https://github.com/EliseuGaspar/pyplayer/archive/1.0.0.zip'
+        'Código fonte': 'https://github.com/EliseuGaspar/PyPlayer',
+        'Download': 'https://github.com/EliseuGaspar/PyPlayer/archive/refs/heads/master.zip'
     },
     license = 'MIT',
     keywords = [

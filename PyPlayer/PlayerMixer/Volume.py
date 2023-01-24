@@ -1,6 +1,7 @@
 import pygame
 from pygame.mixer import music
 
+
 def setvolume(volume:float):
     if type(volume) is float:
         music.set_volume(volume)

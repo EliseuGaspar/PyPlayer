@@ -18,6 +18,6 @@ def current_file():
     file = temp.GetTempCurrenFile(temp)
     if sys.platform == 'win32': 
         file = file[file.rfind('\\')+1:len(file)]
-    if sys.platform != 'win32':
+    else:
         file = file[file.rfind('/')+1:len(file)]
     return file

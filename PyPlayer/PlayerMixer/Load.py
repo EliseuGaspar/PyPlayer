@@ -7,7 +7,7 @@ from .Play import play as  PLAY
 
 class load():
     # ...
-    # File = [path single file / path list file]
+    # ...
     def __init__(self , file : str = None , dir : str = None,
     list_ : list = None , loading : bool = False , *args):
 

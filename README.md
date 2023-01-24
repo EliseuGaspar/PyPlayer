@@ -16,6 +16,13 @@ Com o Pyplayer será possível criar um player de audio completo sem usar um out
 
 # Exemplo do Modúlo PyPlayer
 
+## Instalando o PyPlayer
+
+```bash
+pip install PyPlayer
+
+```
+
 ```python
 from PyPlayer import PlayerMixer as p
 

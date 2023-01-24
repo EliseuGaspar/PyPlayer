@@ -11,7 +11,7 @@ from .Next import next_
 from .Volume import setvolume
 from .Volume import getvolume
 from .Restart import restart
-from .CurrenteTime import currenttime, current_time
+from .CurrenteTime import current_time
 from .Duration import duration
 from .List import list_ , current_file
 from .Tag import tags

@@ -5,7 +5,7 @@ from .Duration import duration
 from pygame.mixer import music
 from time import sleep
 
-
+"""
 def newtime(time1,time2):
     
     usertime = 100 - time1
@@ -53,7 +53,8 @@ def currenttime(endtime : int = 100):
             return True , f"{current_minute}:{current_seconds}"
         else:
             return False , "00:00"
-    
+"""
+
 def current_time(type_ : str = 'time', controler : bool = False):
     if type_ == 'time':
         readjson_ = readjson()

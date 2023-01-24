@@ -1,4 +1,3 @@
-from pygame.mixer import music
 
 def endsound(): 
     y = 2
