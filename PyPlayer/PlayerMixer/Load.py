@@ -1,3 +1,4 @@
+import pygame
 from pygame.mixer import music
 import os
 from .filesTemp.Temp import temp
@@ -7,17 +8,37 @@ from .Play import play as  PLAY
 class load():
     # ...
     # File = [path single file / path list file]
-    def __init__(self,file=None,dir=None,loading : bool = False,play : bool = True,*args):
-        if loading == False:
+    def __init__(self , file : str = None , dir : str = None,
+    list_ : list = None , loading : bool = False , *args):
+
+        if loading != False and file != None:
+            self.LoadOtherFile(file=file,play=True)
+        else:
             if file != None:
-                music.load(file)
+                try:
+                    music.load(file)
+                except pygame.error:
+                    print(
+                        f"PyPlayer.Error: O caminho introduzido não existe ou o arquivo {file} está corrompido"
+                    )
                 temp.InsertInFilesTemp(temp,file=file)
             elif dir != None:
                 list_files = self.RuningPath(dir)
                 file_ = temp.InsertInFilesTemp(temp,list_file=list_files)
-                music.load(file_)
-        else:
-            self.LoadOtherFile(file=file,play=True)
+                try:
+                    music.load(file_)
+                except pygame.error:
+                    print(
+                        f"PyPlayer.Error: O caminho introduzido não existe ou o arquivo {file_} está corrompido"
+                    )
+            elif list_ != None:
+                file_ = temp.InsertInFilesTemp(temp,list_file=list_)
+                try:
+                    music.load(file_)
+                except pygame.error:
+                    print(
+                        f"PyPlayer.Error: O caminho introduzido não existe ou o arquivo {file_} está corrompido"
+                    )
     
     
     def RuningPath(self,dir):
@@ -38,9 +59,20 @@ class load():
 
     def LoadOtherFile(self,file=None,play=None):
         if play == True:
-            music.load(file)
+            try:
+                music.load(file)
+            except pygame.error:
+                print(
+                    f"PyPlayer.Error: O caminho introduzido não existe ou o arquivo {file} está corrompido"
+                )
             PLAY()
         else:
-            music.load(file)
+            try:
+                music.load(file)
+            except pygame.error:
+                print(
+                    f"PyPlayer.Error: O caminho introduzido não existe ou o arquivo {file} está corrompido"
+                )
+
 
 

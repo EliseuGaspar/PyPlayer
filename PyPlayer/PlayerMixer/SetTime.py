@@ -2,6 +2,6 @@ from pygame.mixer import music
 
 
 class settime():
-
-    def __init__(self,pos):
-        music.set_pos(pos)
+    def __init__(self,pos : float = None):
+        if pos != None:
+            music.set_pos(pos)

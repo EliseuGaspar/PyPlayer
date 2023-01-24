@@ -2,17 +2,17 @@
 
 
 
-# Um modúlo perfeito para audios MP3
+# Um modúlo perfeito para áudios MP3
 
 
 
-**PyPlayer** é um modúlo para manipulação de audios no formato **MP3**. O mesmo foi criado com o objectivo de ser um modúlo fácil de usar e completo no contexto de manipulação de MP3.
+**PyPlayer** é um modúlo para manipulação de áudios no formato **MP3**. O mesmo foi criado com o objectivo de ser um modúlo fácil de usar e completo no contexto de manipulação de MP3.
 
 ## O que o torna especial ?
 
 O PyPlayer tende a ser especial porque cobrirá todas as **necessidades** que alguém que gostaria de criar um **player de audio** teria.
 
-Com o Pyplayer será possível criar um player de audio completo sem usar um outro modúlo para audios que não seja o PyPlayer.
+Com o Pyplayer será possível criar um player de audio completo sem usar um outro modúlo para áudios que não seja o PyPlayer.
 
 # Exemplo do Modúlo PyPlayer
 
@@ -57,12 +57,11 @@ class | ação
  **settime** | <u>muda o tempo atual do arquivo em execução</u>
  **duration()** | <u>retorna o tempo total do arquivo em execução</u>
  **tags** | <u>retorna as tags do arquivo</u>
- |
 
 
 # Estrutura do PyPlayer
 
-O **PyPlayer** foi criado usando outros modúlos como, ´Pygame´; ´Mutagen´; ´Json´; ´Sqllite3´.
+O **PyPlayer** foi criado usando outros modúlos como, ´Pygame´; ´Mutagen´; ´Json´.
 O foco não é só criar um modúlo perfeito para a execução de **arquivos mp3(e outros formatos no futuro)**, o foco é tornar o **PyPlayer** um modúlo útil na edição dos mesmos  e também na execução de **arquivos mp4(videos)**.
 
 ## Documentação

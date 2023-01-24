@@ -2,8 +2,6 @@ from .filesTemp.Temp import temp
 from .Load import load
 
 class next_():
-    # ...
-    # ...
     def __init__(self,*args):
         current_file = temp.GetTempCurrenFile(temp)
         list_files = temp.GetTempList(temp)
