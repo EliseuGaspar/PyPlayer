@@ -1,5 +1,4 @@
 from pygame import mixer
-import os
 
 from .Load import load
 from .Play import play
@@ -17,6 +16,7 @@ from .List import list_ , current_file
 from .Tag import tags
 from .SetTime import settime
 from .Playing import playing
+from .GetPath import getpath
 from .___Init___ import ___init___
 
 ___init___()

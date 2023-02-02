@@ -3,21 +3,24 @@ import sys
 
 
 def list_():
-    list_files = []
-    files = temp.GetTempList(temp)
-    for x in files:
-        if sys.platform != 'win32':
-            x = x[x.rfind('/')+1:]
+    try:
+        list_files = []
+        files = temp.GetTempList(temp)
+        if type(files) == list:
+            for x in files:
+                x = x[x.rfind('/')+1:]
+                list_files.append(x)
+            return list_files
         else:
-            x = x[x.rfind('\\')+1:]
-        list_files.append(x)
-    return list_files
-
+            files = files[files.rfind('/')+1:]
+            files = files[files.rfind('\\')+1:]
+            list_files.append(files)
+            return list_files
+    except: pass
 
 def current_file():
-    file = temp.GetTempCurrenFile(temp)
-    if sys.platform == 'win32': 
-        file = file[file.rfind('\\')+1:len(file)]
-    else:
+    try:
+        file = temp.GetTempCurrenFile(temp)
         file = file[file.rfind('/')+1:len(file)]
-    return file
+        return file
+    except: pass

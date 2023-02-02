@@ -4,11 +4,11 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name = "PyPlayer",
+    name = "Py_Player",
     version = '1.0.0',
     author = 'Eliseu Gaspar',
     author_email = 'eliseugaspar4@gmail.com',
-    packages = ['PyPlayer'],
+    packages = ['Py_Player'],
     description = 'Um Pacote perfeito para audios mp3',
     long_description = 'PyPlayer é um modúlo para manipulação de áudios no formato MP3.\
     O mesmo foi criado com o objectivo de ser um modúlo fácil de usar e completo no \

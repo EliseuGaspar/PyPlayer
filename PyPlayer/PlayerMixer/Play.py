@@ -6,8 +6,7 @@ from datetime import datetime
 
 
 class play():
-    # ...
-    # ...
+    
     def __init__(self):
         self.readjson = readjson()
         try:
@@ -16,6 +15,7 @@ class play():
             self.readjson.SetStartTime(f"{data.hour}:{data.minute}:{data.second}")
             self.readjson.SetCurrentTime(new_time='0')
             duration()
+            self.readjson.SetStatusTime(True)
         except pygame.error:
             print(
                 "PyPayer.Error: Não é possível dar o play porque não foi feito nenhum load()"

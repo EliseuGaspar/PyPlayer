@@ -1,6 +1,7 @@
 from mutagen.mp3 import MP3
 from .filesTemp.Temp import temp
 from .dbJson import readjson
+from pygame.mixer import music
 
 def duration(type_ : str = 'time'):
     if type_ == 'time':
@@ -8,11 +9,11 @@ def duration(type_ : str = 'time'):
         current_file = MP3(file)
         readjson.SetFileTime(
             readjson,
-            f"{(int(current_file.info.length/60)*60)+(int(current_file.info.length%60)+4)}"
+            f"{(int(current_file.info.length/60)*60)+(int(current_file.info.length%60))}"
         )
 
         minute = int(current_file.info.length/60)
-        second = (int(current_file.info.length%60)+4)
+        second = (int(current_file.info.length%60))
 
         if minute < 10:
             minute = f"0{minute}"
@@ -26,4 +27,4 @@ def duration(type_ : str = 'time'):
         current_file = MP3(file)
         return current_file.info.length
     else:
-        return False
+        return 0
