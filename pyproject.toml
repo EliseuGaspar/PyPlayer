@@ -7,7 +7,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "Py_Player"
+name = "PyPlayer-1.0.0"
 version = "1.0.0"
 authors = [
   { name="Eliseu Augusto Gaspar", email="eliseugaspar4@gmail.com" },

@@ -1,3 +1,20 @@
+Metadata-Version: 2.1
+Name: PyPlayer-1.0.0
+Version: 1.0.0
+Summary: Um modúlo para audios MP3
+Home-page: https://github.com/EliseuGaspar/PyPlayer
+Author: Eliseu Gaspar
+Author-email: Eliseu Augusto Gaspar <eliseugaspar4@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/EliseuGaspar/PyPlayer
+Keywords: player,mp3,audio,pacote para audio
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENCE.txt
+
 <img src="https://github.com/EliseuGaspar/PyPlayer/blob/master/assets/label-logo2.png" width="100%">
 
 
@@ -18,8 +35,11 @@ O Nome do modúlo é PyPlayer e não Pyaudio ou PyPlayerAudio, ou seja o foco n�
 
 ## Instalando o PyPlayer
 
-> Baixe o zip e depois descompacta-o, de seguida copie ou recorte a pasta com o nome **PyPlayer** e coloca-a no diretório raíz dos teus modúlos python este caminho provavelmente estará em *%User%AppData/Local/Programs/Python/Lib*.
+```bash
 
+pip install PyPlayer
+
+```
 
 ## Exemplos de como alguns metódos e classes podem ser usados
 
